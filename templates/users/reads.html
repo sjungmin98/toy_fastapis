@@ -1,0 +1,37 @@
+{% extends "main_template.html" %}
+{% block head_name %}
+  <title>회원 상세 보기</title>
+{% endblock %}
+{% block main_container %}
+<h2>회원 상세 보기</h2>
+<form>
+    <div class="mb-3 mt-3">
+      <label for="email" class="form-label">Email:</label>
+      john@example.com
+    </div>
+    <div class="mb-3">
+      <label for="pwd" class="form-label">Password:</label>
+      **********
+    </div>
+    <div class="form-check mb-3">
+      <label class="form-check-label">
+        <input class="form-check-input" type="checkbox" disabled name="manager"> 관리자 확인
+      </label>
+    </div>
+    <div class="mb-3"> <!--bottom에 마진을 주는 클래스-->
+        <label for="sel1" class="form-label">Select list (select one):</label>
+        1
+    </div>
+    <div class="mb-3">
+        <label for="comment">Comments:</label>
+        <textarea class="form-control" rows="5" id="comment" name="text"></textarea>
+    </div>
+    <div class="justify-content-center">
+      <button formmethod="get" formaction="/users/lists" type="submit" class="btn btn-primary">List</button>
+      <button formmethod="post" formaction="/users/lists" type="submit" class="btn btn-danger">Delete</button>
+    </div>    
+  </form>
+  {% endblock %}
+{% block footer %}
+<footer class="container">footer</footer>
+{% endblock %}

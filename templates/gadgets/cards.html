@@ -1,0 +1,27 @@
+{% extends "main_template.html"%}
+{% block head_name %}
+<title>Cards</title>
+{% end block %}
+{% block main_container %}
+<div class="row ">
+    <div class="col-6 card">
+        <div class="card-header bg-primary">Header</div>
+        <div class="card-body bg-secondary">Contents</div>
+        <div class="card-footer bg-info">Footer</div>
+    </div>
+    <div class="col-6 card">
+        <div class="card-header bg-primary">Header</div>
+        <div class="card-body bg-secondary">Contents</div>
+        <div class="card-footer bg-info">Footer</div>
+    </div>
+</div>
+<div class="card">
+    <div class="card-header bg-primary">Header</div>
+    <div class="card-body bg-secondary">Contents</div>
+    <div class="card-footer bg-info">Footer</div>
+</div>
+{% end block %}
+
+{% block footer %}
+<footer>footer</footer>
+{% endblock %}
